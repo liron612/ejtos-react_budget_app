@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Currency = () => {
@@ -12,16 +12,18 @@ const Currency = () => {
     }
 
     return (
-        <div className="alert alert-success"> 
-        Currency {
-            <select class="alert-heading" name="Currency" id="Currency" onChange={event=>changeCurrency(event.target.value)}>
+        <button type="button" class="btn btn-success">Currency
+        <select class="form-control-sm btn btn-success border-0" name="Currency" id="Currency" onChange={event=>changeCurrency(event.target.value)}>
+              
               <option value="$">$ Dollar</option>
               <option value="£">£ Pound</option>
               <option value="€">€ Euro</option>
               <option value="₹">₹ Ruppee </option>
-            </select>	
-            }	
-        </div>
+              
+            </select>
+    </button>	
+            	
+        
 
   
     );
