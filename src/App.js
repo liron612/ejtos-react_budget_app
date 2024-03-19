@@ -30,7 +30,7 @@ const App = () => {
                 </div>
                 <h3 className='mt-3'>Allocation</h3>
                 <div className='row '>
-                    <div className='col-sm'>
+                    <div className='col-sm-12'>
                         <ExpenseList />
                     </div>
                 </div>
